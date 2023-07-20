@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li{ list-style: none;}
+a{ color:#222; text-decoration: none;}
+
+.container{ width:1280px; }
+
+
+.ofh{ overflow: hidden;}
+.d-flex{ display: flex;}
+.h100{ height: 100px;}
+.jcb{ justify-content: space-between;}
+
+.rel{ position: relative;}
+.abs{ position: absolute;}
+
+
+.w-1{ width: 33.3333%;}
+.w-2{ width: 66.6666%}
+.w-h{ width:50% }
+.h200{ height: 200px;}
+
+#hd{
+    background-color: #ccc;
+    align-items: center;
+}
+
+#gnb > li > a{
+    font-size: 22px;
+    padding: 0 15px;
+}
+/* 소메뉴 */
+#gnb  ul{
+    background-color: black;
+    width:100px;
+    top:0;
+    left:100%;
+    text-indent: 1rem;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+#gnb  ul  a{ color:white } 
+
+/* A */
+#gnb > li:hover ul{
+    height: 7rem;
+}
+#gnb > li:hover > a{
+    color:red
+}
+/* B + C */
+/* #gnb:hover ul{
+    height: 7rem;
+} */
+
+/* #gnb:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    left:0; top:100%; right:0;
+    height: 0;
+    transition: 0.5s;
+}
+#gnb:hover:after{
+    height: 7rem;
+} */
+header#hd{
+  width: 200px;
+}
+.content, .ani > div{
+    /* flex-grow: 1; */
+    width: calc(100% - 200px)
+}
+.ani > div{
+    height: 350px;   
+    left:0; top:0;
+    width:100%; 
+    opacity: 0;
+    transition: 0.5s;
+}
+.ani{ width:100000px}
+
+.on{
+    opacity: 1 !important;
+}
+
+.b1{
+    background-color: red;
+}
+.b2{ background-color: yellow;}
+.b3{ background-color: blue ;}
+
+#banner{
+    overflow: hidden;
+    height: 350px;
+}
+
+.tab2 li .abs{
+    left:0; top:100%;
+    right:0;
+    background-color: white;
+    min-height:150px
+}
+
+.act h2{ color:red}
+.act ul{ z-index: 10000;}
+
+.pop{
+    width:150px;
+    height:150px;
+    background-color: white;
+    border:1px solid #ccc;
+    left:0; right:0; top:0; bottom:0;
+    margin: auto;
+    z-index: 10000;
+    display: none;
+}
+.pop.show{
+    display: block;
+}
